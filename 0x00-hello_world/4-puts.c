@@ -3,7 +3,8 @@
 /**
  * main: entry point
  *
- * Description:write a program to that prints a sentence returns 0
+ * Description:write a program to that prints a sentence
+ * Return:always returns 0
  */
 int main(void)
 {
