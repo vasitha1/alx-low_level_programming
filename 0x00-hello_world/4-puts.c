@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main: entry point
+ * main -Entry point
  *
  * Description:write a program to that prints a sentence
- * Return:always returns 0
+ * Return:always 0 (sucess)
  */
 int main(void)
 {
