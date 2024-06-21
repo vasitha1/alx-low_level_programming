@@ -21,7 +21,7 @@ int main(void)
 	 *  your code goes there
 	 *  If statement verifying the sign of n
 	*/
-	if (n > 0)
+	if [n > 0]
 	{
 		printf("%d is positive", n);
 	}
@@ -29,10 +29,8 @@ int main(void)
 	{
 		printf("%d is zero", n);
 
-
-	else
-	{
-		printf("%d is negative", n);
 	}
+	else
+		printf("%d is negative", n);
 	return (0);
 }
