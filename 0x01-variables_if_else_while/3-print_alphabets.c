@@ -12,7 +12,7 @@ int main(void)
 {
 	char lower_case = 'a';
 	char upper_case = 'A';
-	
+
 	/*While loop that prints lower case letters*/
 	while (lower_case <= 'z')
 	{
@@ -21,12 +21,12 @@ int main(void)
 	}
 
 	/*While loop that prints upper case letters*/
-        while (upper_case <= 'z')
-        {
-                putchar(upper_case);
-                upper_case++;
-        }
-	
+	while (upper_case <= 'Z')
+	{
+		putchar(upper_case);
+		upper_case++;
+	}
+
 	putchar('\n');
 	return (0);
 }
