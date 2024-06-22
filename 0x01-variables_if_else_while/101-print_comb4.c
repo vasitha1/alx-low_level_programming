@@ -35,10 +35,10 @@ int main(void)
 				putchar(second_digit + '0');
 				putchar(third_digit + '0');
 				/* print comma and spaces */
-				if (third_digit != 9 && first_digit != 7)
+				if (third_digit != 9 && first_digit != 7 && second_digit != 8)
 				{
-					putchar(' ');
 					putchar(',');
+					putchar(' ');
 				}
 				third_digit++;
 			}
