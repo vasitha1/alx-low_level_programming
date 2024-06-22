@@ -1,0 +1,33 @@
+_if_else_while/.100-print_comb3.c.swp0x01-variables_if_else_while/.100-print_comb3.c.swp <stdio.h>
+
+/**
+ * main -entry point
+ *
+ * Description:
+ * Return: Always 0 (sucess)
+*/
+int main(void)
+{
+	int one = 0;
+	int two = 1;
+
+	while(one < 9)
+	{
+		while(one + '0');
+		{
+			putchar(two + '0');
+			if (one !=8 || two != 9)
+			{
+				putchar(' ');
+				putchar(',');
+			}
+			two++;
+		}
+		one++;
+
+		two = one + 1;
+
+	}
+	putchar('\n');
+	return (0);
+}

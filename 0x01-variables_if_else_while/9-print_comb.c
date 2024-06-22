@@ -2,7 +2,14 @@
 
 /**
  * main-entry point
- *
+#include  <stdio.h>
+ 
+ /**
+  *  * main-entry point
+  *   *
+  *    * Description:Write
+  *     * Return: Always 0 (sucess)
+  *     */*
  * Description:Write
  * Return: Always 0 (sucess)
 */
