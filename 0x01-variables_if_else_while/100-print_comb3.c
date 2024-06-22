@@ -11,16 +11,15 @@ int main(void)
 	int one = 0;
 	int two = 1;
 
-	while (one < 9)
-	{
-		putchar(one + '0');
-		while (two < 9)
+	while (one <= 9)
+		while (two <= 9)
 		{
+			putchar(one + '0');
 			putchar(two + '0');
-			if (one !=8 || two != 9)
+			if (one != 8 || two != 9)
 			{
-				putchar(' ');
 				putchar(',');
+				putchar(' ');
 			}
 			two++;
 		}
