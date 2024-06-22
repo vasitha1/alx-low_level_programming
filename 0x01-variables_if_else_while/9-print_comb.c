@@ -19,7 +19,7 @@ int main(void)
 			putchar(' ');
 		}
 
-		number++;
+		v++;
 	}
 
 	putchar('\n');
