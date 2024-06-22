@@ -2,7 +2,7 @@
 
 /**
  * main-entry point
- * 
+ *
  * Description:Write
  * Return: Always 0 (sucess)
 */
