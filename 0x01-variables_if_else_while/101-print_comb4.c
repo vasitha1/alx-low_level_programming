@@ -18,18 +18,24 @@ int main(void)
 		while (second_digit <= 9)
 		{
 			if (second_digit == first_digit)
+			{
+				second_digit++;
 				continue;
+			}
 
 			while (third_digit <= 9)
 			{
 				if (third_digit == second_digit || third_digit == first_digit)
+				{
+					third_digit++;
 					continue;
+				}
 
 				putchar(first_digit + '0');
 				putchar(second_digit + '0');
 				putchar(third_digit + '0');
 				/* print comma and spaces */
-				if (third_digit == 9)
+				if (third_digit != 9)
 				{
 					putchar(' ');
 					putchar(',');
