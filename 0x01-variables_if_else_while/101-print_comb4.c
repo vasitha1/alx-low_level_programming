@@ -10,13 +10,15 @@
 int main(void)
 {
 	int first_digit = 0;
-	int second_digit = 1;
-	int third_digit = 2;
 
 	while (first_digit <= 9)
 	{
+		int second_digit = 1;
+
 		while (second_digit <= 9)
 		{
+			int third_digit = 2;
+
 			if (second_digit == first_digit)
 			{
 				second_digit++;
