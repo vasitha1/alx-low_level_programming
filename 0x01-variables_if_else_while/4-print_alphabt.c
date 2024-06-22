@@ -14,10 +14,10 @@ int main(void)
 	 * While loop Embedded in an If statement to print letters
 	 *consecutively and exclude q and e
 	*/
-	
+
 	while (wanted_letter <= 'z')
 	{
-		if (wanted_letter == 'q' || wanted_letter == 'e')
+		if (wanted_letter != 'q' || wanted_letter != 'e')
 		{
 			putchar(wanted_letter);
 			wanted_letter++;
