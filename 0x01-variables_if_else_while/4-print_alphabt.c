@@ -17,11 +17,11 @@ int main(void)
 
 	while (wanted_letter <= 'z')
 	{
-		if (wanted_letter != 'q' || wanted_letter != 'e')
+		if (wanted_letter != 'q' &&  wanted_letter != 'e')
 		{
 			putchar(wanted_letter);
-			wanted_letter++;
 		}
+	wanted_letter++
 	}
 	putchar('\n');
 
