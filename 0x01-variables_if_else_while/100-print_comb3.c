@@ -13,7 +13,8 @@ int main(void)
 
 	while (one < 9)
 	{
-		while (one + '0')
+		putchar(one + '0');
+		while (two < 9)
 		{
 			putchar(two + '0');
 			if (one !=8 || two != 9)
