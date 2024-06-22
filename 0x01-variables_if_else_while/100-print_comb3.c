@@ -11,9 +11,9 @@ int main(void)
 	int one = 0;
 	int two = 1;
 
-	while(one < 9)
+	while (one < 9)
 	{
-		while(one + '0');
+		while (one + '0')
 		{
 			putchar(two + '0');
 			if (one !=8 || two != 9)
