@@ -12,6 +12,7 @@ int main(void)
 	int two = 1;
 
 	while (one <= 9)
+	{
 		while (two <= 9)
 		{
 			putchar(one + '0');
