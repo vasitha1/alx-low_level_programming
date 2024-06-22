@@ -13,18 +13,17 @@ int main(void)
 
 	while (first_digit <= 9)
 	{
-		int second_digit = 1;
+		int second_digit = first_digit + 1;
 
 		while (second_digit <= 9)
 		{
-			int third_digit = 2;
+			int third_digit = second_digit + 1;
 
 			if (second_digit == first_digit)
 			{
 				second_digit++;
 				continue;
 			}
-
 			while (third_digit <= 9)
 			{
 				if (third_digit == second_digit || third_digit == first_digit)
@@ -32,12 +31,11 @@ int main(void)
 					third_digit++;
 					continue;
 				}
-
 				putchar(first_digit + '0');
 				putchar(second_digit + '0');
 				putchar(third_digit + '0');
 				/* print comma and spaces */
-				if (third_digit != 9)
+				if (third_digit != 9 && first_digit != 7)
 				{
 					putchar(' ');
 					putchar(',');
@@ -48,7 +46,6 @@ int main(void)
 		}
 		first_digit++;
 	}
-	
 	putchar('\n');
 	return (0);
 }
