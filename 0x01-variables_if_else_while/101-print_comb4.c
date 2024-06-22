@@ -38,7 +38,7 @@ int main(void)
 			}
 			second_digit++;
 		}
-		first_digit++
+		first_digit++;
 	}
 	
 	putchar('\n');
