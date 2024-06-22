@@ -7,7 +7,7 @@
  * Description:Printing numbers in base 10
  * Return: Always 0 (sucess)
 */
-int main(void);
+int main(void)
 {
 	int p = 0;
 
