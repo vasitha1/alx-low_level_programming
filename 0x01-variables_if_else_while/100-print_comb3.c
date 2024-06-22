@@ -1,4 +1,4 @@
-_if_else_while/.100-print_comb3.c.swp0x01-variables_if_else_while/.100-print_comb3.c.swp <stdio.h>
+#include <stdio.h>
 
 /**
  * main -entry point
