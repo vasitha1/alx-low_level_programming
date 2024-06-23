@@ -24,7 +24,7 @@ int main(void)
 				while (num2_digit2 <= 9)
 				{
 					putchar(num1_digit1 + '0');
-					putchar(nu1_digit2 + '0');
+					putchar(num1_digit2 + '0');
 					putchar(' ');
 					putchar(num2_digit1 + '0');
 					putchar(num2_digit2 + '0');
