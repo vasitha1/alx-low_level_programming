@@ -9,6 +9,8 @@
 int main(void)
 {
 	int num1_digit1 = 0;
+	int comma = 44;
+	int space = 32;
 
 	while (num1_digit1 <= 9)
 	{
@@ -26,14 +28,14 @@ int main(void)
 				{
 					putchar((num1_digit1 % 10) + '0');
 					putchar((num1_digit2 % 10) + '0');
-					putchar(' ');
+					putchar(space);
 					putchar((num2_digit1 % 10) + '0');
 					putchar((num2_digit2 % 10) + '0');
 					if (num1_digit1 != 9 || num1_digit2 != 8 ||
 					num2_digit1 != 9 || num2_digit2 != 9)
 					{
-						putchar(',');
-						putchar(' ');
+						putchar(comma);
+						putchar(space);
 					}
 					num2_digit2++;
 				}
