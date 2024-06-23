@@ -28,7 +28,7 @@ int main(void)
 					putchar((num1_digit2 % 10) + '0');
 					putchar(' ');
 					putchar((num2_digit1 % 10) + '0');
-					putchar((num2_digit2 % 1)0 + '0');
+					putchar((num2_digit2 % 10) + '0');
 					if (num1_digit1 != 9 || num1_digit2 != 8 ||
 					num2_digit1 != 9 || num2_digit2 != 9)
 					{
