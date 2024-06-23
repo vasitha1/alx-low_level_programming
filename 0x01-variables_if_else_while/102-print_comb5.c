@@ -20,7 +20,8 @@ int main(void)
 
 			while (num2_digit1 <= 9)
 			{
-				int num2_digit2 = 1;
+				int num2_digit2 = num2_digit2 + 1;
+
 				while (num2_digit2 <= 9)
 				{
 					putchar(num1_digit1 + '0');
