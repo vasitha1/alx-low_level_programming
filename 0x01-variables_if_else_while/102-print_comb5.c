@@ -8,42 +8,29 @@
 */
 int main(void)
 {
-	int num1_digit1 = 0;
+	int num1 = 0;
 	int comma = 44;
 	int space = 32;
+	int num2 = 1;
 
-	while (num1_digit1 <= 9)
+	while (num1 < 99)
 	{
-		int num1_digit2 = 0;
-
-		while (num1_digit2 <= 9)
+		num2 = num1 + 1;
+		while (num2 <= 99)
 		{
-			int num2_digit1 = 0;
-
-			while (num2_digit1 <= 9)
+			putchar((num1/10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(space);
+			putchar((num2/10) + '0');
+			putchar((num2 % 10) + '0');
+			if (num1 != 98 || num2 != 99)
 			{
-				int num2_digit2 = 1;
-
-				while (num2_digit2 <= 9)
-				{
-					putchar((num1_digit1 % 10) + '0');
-					putchar((num1_digit2 % 10) + '0');
-					putchar(space);
-					putchar((num2_digit1 % 10) + '0');
-					putchar((num2_digit2 % 10) + '0');
-					if (num1_digit1 != 9 && num1_digit2 != 8 &&
-					num2_digit1 != 9 && num2_digit2 != 9)
-					{
-						putchar(comma);
-						putchar(space);
-					}
-					num2_digit2++;
-				}
-				num2_digit1++;
+				putchar(comma);
+				putchar(space);
 			}
-			num1_digit2++;
+			num2++;
 		}
-		num1_digit1++;
+		num1++;
 	}
 	putchar('\n');
 	return (0);
