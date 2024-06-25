@@ -8,7 +8,7 @@
  */
 void print_alphabet_x10(void)
 {
-	char alpihabet = 'a';
+	char alphabet = 'a';
 	int number = 0;/* to track the number of alphabet prints*/
 
 	while (number < 10)
