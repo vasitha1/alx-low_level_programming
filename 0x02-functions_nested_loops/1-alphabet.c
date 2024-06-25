@@ -3,7 +3,8 @@
 /**
  * print_alphabet -  prints the alphabet, in lowercase, followed by a new line.
  *
- * Description: This creates a function to print the alphabet. Prototype: void print_alphabet(void);
+ * Description: This creates a function to print the alphabet. 
+ * Prototype: void print_alphabet(void);
  * You can only use _putchar twice in your code
  * Return: Nothing
  */
