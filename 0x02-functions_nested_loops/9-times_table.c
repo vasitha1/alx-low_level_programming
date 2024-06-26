@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * time_table - Write a function that prints the 9 times table, starting with 0.
+ * times_table - A function that prints the 9 times table, starting with 0.
  *
  * Description: The program prints the 9 time table starting with zero
  * Return: Always nothing (sucess)
@@ -17,7 +17,16 @@ void times_table(void)
 		while (j <= 9)
 		{
 			int product = i * j;
-			_putchar(product + '0');
+			
+			/* the if statement is to handle non-single  digit*/
+			if (product <= 9)
+				_putchar(product + '0');
+
+			else
+			{
+				_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
+			}
 			_putchar(',');
 			_putchar(' ');
 			j++;
