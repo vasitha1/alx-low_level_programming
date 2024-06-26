@@ -14,6 +14,7 @@ void times_table(void)
 	{
 		int j = 0;/*keeps track of the rows*/
 
+		_putchar('0');/* to handle commas*/
 		while (j <= 9)
 		{
 			int product = i * j;
@@ -21,24 +22,24 @@ void times_table(void)
 			/* the if statement is to handle non-single  digit*/
 			if (product <= 9)
 			{
-				_putchar(product + '0');
 				if (j < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 				}
+				_putchar(product + '0');
 			}
 
 			else
 			{
-				_putchar((product / 10) + '0');
-				_putchar((product % 10) + '0');
 				if (j < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
 				}
+				_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
 			}
 
 				j++;
