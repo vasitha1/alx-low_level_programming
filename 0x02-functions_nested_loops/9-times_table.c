@@ -17,10 +17,13 @@ void times_table(void)
 		while (j <= 9)
 		{
 			int product = i * j;
-			
+
 			/* the if statement is to handle non-single  digit*/
 			if (product <= 9)
+			{
 				_putchar(product + '0');
+				_putchar(' ');
+			}
 
 			else
 			{
