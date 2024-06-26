@@ -4,7 +4,7 @@
  * print_sign - Prints the sign of a number
  * @n: Is the number to be checked
  *
- * Description: The program checks if a number is <> or = to zero 
+ * Description: The program checks if a number is <> or = to zero
  * Return: 1 if > 0, 0 if == 0, -1 if < 0
 */
 int print_sign(int n)
@@ -24,4 +24,4 @@ int print_sign(int n)
 		_putchar('-');
 		return (-1);
 	}
-}	
+}
