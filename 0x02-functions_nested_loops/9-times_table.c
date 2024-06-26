@@ -6,7 +6,7 @@
  * Description: The program prints the 9 time table starting with zero
  * Return: Always nothing (sucess)
  */
-void times_table(void);
+void times_table(void)
 {
 	int i = 0;/*keeps track of the colums*/
 
