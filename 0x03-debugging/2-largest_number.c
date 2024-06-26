@@ -16,7 +16,7 @@ int largest_number(int a, int b, int c)
 
 	while (i > 2)
 	{
-		if (paramerers[i] > largest)
+		if (parameters[i] > largest)
 			largest = parameters[i];
 
 		i++;
