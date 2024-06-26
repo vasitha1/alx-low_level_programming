@@ -8,11 +8,11 @@
  */
 void times_table(void)
 {
-	int i = 0;/*keeps track of the colums*/
+	int i = 1;/*keeps track of the colums*/
 
 	while (i <= 9)
 	{
-		int j = 0;/*keeps track of the rows*/
+		int j = 1;/*keeps track of the rows*/
 
 		_putchar('0');/* to handle commas*/
 		while (j <= 9)
