@@ -4,7 +4,7 @@
  * _abs - Computes absolute value
  * @n: takes an interger
  *
- * Description: The program uses 
+ * Description: The program uses
  * Return: n if negative and -n if possitive
  */
 int _abs(int n)
