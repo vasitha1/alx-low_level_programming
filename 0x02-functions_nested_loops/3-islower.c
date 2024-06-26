@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower -Checks if characters are lower case or not
+ * _islower - Checks if characters are lower case or not
  *
  * Description: Verifies if it is between a and z
  * Returns 1 if c is lowercase
