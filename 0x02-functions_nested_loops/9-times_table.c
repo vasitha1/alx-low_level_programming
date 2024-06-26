@@ -17,7 +17,7 @@ void times_table(void)
 		while (j <= 9)
 		{
 			int product = i * j;
-			_putchar(product);
+			_putchar(product + '0');
 			_putchar(',');
 			_putchar(' ');
 			j++;
