@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * main - entry point
- * @n: int equals zero that we are testing
- *
- * Description: The program tests the validity of the function positive or
- * negative in the main.h library
- * Return: Always 0 (sucess)
+* main - tests function that prints if integer is positive or negative
+* Return: 0
 */
+
 int main(void)
 {
-	int n = 0;
+	int i;
 
-	positive_or_negative(n);
+	i = 0;
+	positive_or_negative(i);
+
 	return (0);
 }
