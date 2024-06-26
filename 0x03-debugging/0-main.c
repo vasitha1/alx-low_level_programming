@@ -12,5 +12,7 @@ int main(void)
 	int n = 0;
 
 	positive_or_negative(n);
+	_putchar('\n');
+
 	return (0);
 }
