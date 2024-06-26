@@ -8,7 +8,7 @@
  */
 void times_table(void)
 {
-	int i = 1;/*keeps track of the colums*/
+	int i = 0;/*keeps track of the colums*/
 
 	while (i <= 9)
 	{
