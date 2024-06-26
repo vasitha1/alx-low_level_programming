@@ -5,8 +5,7 @@
  * @c: int to be checked
  *
  * Description: Verifies if it is between a and z
- * Return 1 if c is lowercase
- * Return 0 otherwise
+ * Return: 1 if c is lowercase and 0 otherwise
  */
 int _islower(int c)
 {
