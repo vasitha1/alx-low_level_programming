@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_last - prints last digit of a number
+ * print_last_digit - prints last digit of a number
  *@n: Is an int that enters to the function for verification
  *
  * Description: The program prints the print_last_digit by finding the % 10
