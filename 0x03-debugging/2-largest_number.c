@@ -11,15 +11,12 @@
 int largest_number(int a, int b, int c)
 {
 	int largest = a;
-	int i = 1;
-	int parameters[] = {a, b, c};
 
-	while (i > 2)
-	{
-		if (parameters[i] > largest)
-			largest = parameters[i];
+	if (b > largest)
+		largest = b;
 
-		i++;
-	}
+	else if (c > largest)
+		largest = c;
+
 	return (largest);
 }
