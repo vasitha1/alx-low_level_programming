@@ -2,6 +2,7 @@
 
 /**
  * _islower - Checks if characters are lower case or not
+ * @c: int to be checked
  *
  * Description: Verifies if it is between a and z
  * Returns 1 if c is lowercase
