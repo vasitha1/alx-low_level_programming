@@ -22,12 +22,10 @@ void times_table(void)
 			/* the if statement is to handle non-single  digit*/
 			if (product <= 9)
 			{
-				if (j < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				
 				_putchar(product + '0');
 			}
 
