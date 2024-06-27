@@ -12,7 +12,7 @@
 void print_times_table(int n)
 {
 	/*i stops program from continuing if n is not between 0 and 15*/
-	if (n < 15 && n > 0)
+	if (n <= 15 && n >= 0)
 	{
 		int i = 0;	
 
