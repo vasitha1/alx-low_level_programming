@@ -20,11 +20,12 @@ void print_times_table(int n)
 		while (i <= n)
 		{
 			int j = 1;
-			int product = i * j;
 
 			_putchar('0');
 			while (j <= n)
 			{
+				int product = i * j;
+
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
