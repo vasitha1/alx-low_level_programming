@@ -19,4 +19,5 @@ int natural(void)
 		i++;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
