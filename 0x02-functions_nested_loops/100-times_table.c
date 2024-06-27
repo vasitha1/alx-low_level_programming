@@ -14,9 +14,7 @@ void print_times_table(int n)
 	/*i stops program from continuing if n is not between 0 and 15*/
 	if (n < 15 && n > 0)
 	{
-		int i = 0;
-
-		_putchar('0');
+		int i = 0;	
 
 		/*to keep track of the columns*/
 		while (i <= n)
@@ -24,6 +22,7 @@ void print_times_table(int n)
 			int j = 1;
 			int product = i * j;
 
+			_putchar('0');
 			while (j <= n)
 			{
 				_putchar(',');
