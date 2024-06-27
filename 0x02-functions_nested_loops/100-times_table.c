@@ -15,7 +15,8 @@ void print_times_table(int n)
 	if (n < 15 && n > 0)
 	{
 		_putchar('0');
-		int i = 0;
+		int i;
+		i= 0;
 
 		/*to keep track of the columns*/
 		while (i <= n)
