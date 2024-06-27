@@ -15,14 +15,13 @@ void print_times_table(int n)
 	if (n < 15 && n > 0)
 	{
 		_putchar('0');
-		int i,int j, int product;
-		i = 0;
+		int i = 0;
 
 		/*to keep track of the columns*/
 		while (i <= n)
 		{
-			j = 1;
-			product = i * j;
+			int j = 1;
+			int product = i * j;
 
 			while (j <= n)
 			{
