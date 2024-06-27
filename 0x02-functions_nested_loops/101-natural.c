@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * natural - Computes and prints the sum of multiples of 3 or 5 below 1024
+ * main - entry point
+ * Description: Computes and prints the sum of multiples of 3 or 5 below 1024
  *
  * Return: Always 0 (sucess)
 */
-int natural(void)
+int main(void)
 {
 	int sum = 0;
 	int i = 0;
