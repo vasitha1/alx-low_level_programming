@@ -1,8 +1,7 @@
 #include  "main.h"
 
 /**
- * more_numbers - function that prints 10 times the numbers,
- * from 0 to 14, followed by a new line.
+ * more_numbers - function that prints, from 0 to 14, ten times.
  *
  * Description: The program prints from 0 to 14 ten times each followed by a
  * new line
