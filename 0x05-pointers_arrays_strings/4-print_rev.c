@@ -6,6 +6,8 @@
  *
  * Return: nothing (sucess)
 */
+int _strlen(char *s);
+
 void print_rev(char *s)
 {
 	int length = strlen(s);
