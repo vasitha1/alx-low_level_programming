@@ -17,3 +17,23 @@ void print_rev(char *s)
 	}
 	putchar('\n');
 }
+
+/**
+ *_strlen - function that returns the length of a string
+ * @s: string parameter of function
+ *
+ *Return: lenght;
+ */
+int _strlen(char *s)
+{
+	int c = 0;
+	int i = 0;
+
+	while (s[c] != '\0')
+	{
+		i++;
+		c++;
+	}
+
+	return (i);
+}
