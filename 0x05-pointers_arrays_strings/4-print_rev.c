@@ -6,20 +6,19 @@
  *
  * Return: nothing (sucess)
 */
-int _strlen(char *s);
-
-void print_rev(char *s)
+void print_rev(char *str)
 {
-	int length = strlen(s);
-	int i = length - 1;
+	int length = 0;
+	int idx = 0;
 
-    while (i >= 0) {
-	putchar(s[i]);
-	i--;
+	length = _strlen(str);
+	while (idx < length)
+	{
+	    _putchar(str[length - 1 - idx]);
+	    idx++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
-
 /**
  *_strlen - function that returns the length of a string
  * @s: string parameter of function
@@ -28,14 +27,14 @@ void print_rev(char *s)
  */
 int _strlen(char *s)
 {
-	int c = 0;
-	int i = 0;
+	int count = 0;
+	int length = 0;
 
-	while (s[c] != '\0')
+	while (s[count] != '\0')
 	{
-		i++;
-		c++;
+		length++;
+		count++;
 	}
 
-	return (i);
+	return (length);
 }
