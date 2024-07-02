@@ -7,4 +7,23 @@
  *
  * Return: Always nothing (sucess)
 */
+void puts2(char *str)
+{
+	int length, i;
 
+	length = 0;
+	i = 0;
+
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+
+	while (i < length)
+	{
+		_putchar(str[i]);
+		i += 2
+	}
+
+	_putchar('\n');
+}
