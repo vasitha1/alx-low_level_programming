@@ -2,7 +2,7 @@
 
 /**
  *  print_rev - function prints a string, in reverse, followed by a new line
- *  @s: Input string parameter
+ *  @str: Input string parameter
  *
  * Return: nothing (sucess)
 */
@@ -12,6 +12,7 @@ void print_rev(char *str)
 	int idx = 0;
 
 	length = _strlen(str);
+
 	while (idx < length)
 	{
 	    _putchar(str[length - 1 - idx]);
