@@ -21,9 +21,10 @@ void puts_half(char *str)
 	if (index % 2 == 0)
 	{
 		while (str[half] != '0')
-	{
-		_putchar(str[half]);
-		half++;
+		{
+			_putchar(str[half]);
+			half++;
+		}
 	}
 	else if (index % 2)
 	{
