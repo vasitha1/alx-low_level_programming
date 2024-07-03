@@ -1,4 +1,5 @@
 #include  "main.h"
+#include <stdio.h>
 
 /**
  * _strcat - function that concatenates two strings.
@@ -10,28 +11,28 @@
 */
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
-
-	i = 0;
-	j = 0;
-
-	/* while loop that counts the length of dest*/
-	while (dest[i] != '\0')
+	char *concatinate = dest;
+	/* while loop that brings pointer to the end of dest*/
+	while (*dest != '\0')
 	{
-		i++;
+		dest++;
 	}
-	i += 1;/*because the index of src starts with 0*/
 
 	/*while loop that adds the characters of src sucessively*/
-	while (src[j] != '\0')
+	while (*src != '\0')
 	{
-		dest[i] = src[j];
-		j++;
-		i++;
+		*dest = *src;
+		dest++;
+		src++;
 	}
 
 	/* adds a null character to the end ommited by  formal loop*/
-	dest[i + 1] = '\0';
+	*dest = '\0';
 
-	return (dest);
+	/**
+	 * returns the original src pointer so it can point to the begining of
+	 * the concatinated string and read automatically till
+	 * it finds a new line
+	 */
+	return (concatinate);
 }
