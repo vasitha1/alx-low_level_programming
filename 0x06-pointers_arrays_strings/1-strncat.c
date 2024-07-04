@@ -8,7 +8,7 @@
  *
  * Description: The program concatenates two strings using at most
  * at most n bytes from src function that concatenates two strings.
- * Always 0 (sucess)
+ * Return: concartinated string
 */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -19,7 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (*src != '\0')
 	{
-		if (n < 0)
+		if (n <= 0)
 			break;
 
 		else
