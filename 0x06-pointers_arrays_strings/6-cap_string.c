@@ -8,6 +8,7 @@
  */
 char *cap_string(char *str)
 {
+	char *capitalised = str;
 	char seperator[] = " ,;.!?\"(){}";
 	int i;
 
@@ -17,6 +18,9 @@ char *cap_string(char *str)
 
 		while (i < 12)
 		{
+			if (*str == '\t')
+				*str = ' ';
+
 			if (*str == seperator[i])
 			{
 				str++;
@@ -34,5 +38,5 @@ char *cap_string(char *str)
 
 		str++;
 	}
-	return (str);
+	return (capitalised);
 }
