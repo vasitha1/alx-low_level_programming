@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int number_of_bytes;
 	int is_present;
-	char* current_accept;
+	char *current_accept;
 
 	number_of_bytes = 0;
 	is_present = 0;
