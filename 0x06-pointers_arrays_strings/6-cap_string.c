@@ -12,7 +12,7 @@ char *cap_string(char *str)
 	char seperator[] = " \t,\n;.!?\"(){}";
 	int i;
 
-	while (*str != '\0')
+	while (*str)
 	{
 		i = 0;
 
@@ -21,18 +21,17 @@ char *cap_string(char *str)
 			if (*str == seperator[i])
 			{
 				str++;
-				if (*str == ('\n') || *str == (' '))
+				if (*str == ('\n') || (*str == seperator[i] && *str != (' ')))
 				{
-					str++;
+					str++;	
 				}
 				if (*str >= 'a' && *str <= 'z')
 				{
-					*str = *str - 32;
+					*str -= 32;
 				}
 			}
 			i++;
 		}
-
 		str++;
 	}
 	return (capitalised);
