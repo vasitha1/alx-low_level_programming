@@ -20,15 +20,15 @@ void print_diagsums(int *a, int size)
 	/*while loop to get diagonal from left to right*/
 	while (i < size)
 	{
-		sum1 += *(((i * size) + i) + a); 
+		sum1 += *(((i * size) + i) + a);
 		i++;
 	}
 
 	/*while loop to get diagonal from right to left*/
 	while (j < size)
 	{
-		sum2 += *(a + (size * j) + (size -1 -j));
-	
+		sum2 += *(a + (size * j) + (size - 1 - j));
+
 		j++;
 	}
 
