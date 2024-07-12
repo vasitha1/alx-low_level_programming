@@ -11,7 +11,13 @@
 */
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	int sum = 0;
+
+	while (argc -- > 1)
+	{
+		sum += 1;
+	}
+	printf("%d\n", sum);
 	*argv[0] = *argv[0];
 
 	return (0);
