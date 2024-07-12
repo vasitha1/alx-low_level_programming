@@ -7,7 +7,7 @@
  * @argc: Argument count
  * @argv: Argument vector(Array of arguments)
  *
- * Description: The program multiplies two numbers. 
+ * Description: The program multiplies two numbers.
  * Return: 1 if arguments are not two 0 if they are (success)
 */
 int main(int argc, char *argv[])
