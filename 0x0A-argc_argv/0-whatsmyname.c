@@ -9,7 +9,10 @@
  * Description: The program  prints its name, followed by a new line.
  * Return: Always 0 (sucess)
 */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	printf("%s\n", **argv);
+	printf("%s\n", argv[0]);
+	argc = argc;
+
+	return (0);
 }
