@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 	amount = atoi(argv[1]);
 
-	while (i < 5)
+	while (i < 5 && amount > 0)
 	{
 		change += (amount / coins[i]);
 		amount = amount % coins[i];
