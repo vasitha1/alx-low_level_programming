@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 		while (argv[i][j])
 		{
-			if (atoi(argv[i]) == 0 && argv[i][0] != '0')
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
