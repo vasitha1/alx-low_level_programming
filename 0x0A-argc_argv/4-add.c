@@ -1,4 +1,3 @@
-#include  "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -13,16 +12,23 @@
 */
 int main(int argc, char *argv[])
 {
+	int j;
+
 	int sum = 0;
 	int i = 1;
 
 	while (i < argc)
 	{
+		j = 0;
 
-		if (atoi(argv[i]) == 0 && argv[i][0] != '0')
+		while (argv[i][j])
 		{
-			printf("Error\n");
-			return (1);
+			if (atoi(argv[i]) == 0 && argv[i][0] != '0')
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
 		}
 
 		sum += atoi(argv[i]);
