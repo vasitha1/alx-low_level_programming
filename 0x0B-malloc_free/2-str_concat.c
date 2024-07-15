@@ -14,10 +14,11 @@ char *str_concat(char *s1, char *s2)
 	int len, len1, len2, i;
 
 	if (s1 == NULL || s2 == NULL)
-		return (0);
+		return (NULL);
 
 	len1 = 0;
 	len2 = 0;
+	i = 0;
 
 	/*getting the leength of both s1 + s2*/
 	while (s1[len1] != '\0')
@@ -29,14 +30,10 @@ char *str_concat(char *s1, char *s2)
 		len2++;
 	}
 	len = len1 + len2;
-
 	joined = (char *)malloc(sizeof(char) * (len + 1));
 
 	if (joined == NULL)
-		return (0);
-
-	i = 0;
-
+		return (NULL);
 	/*assigning values to space created for concatinated string*/
 	while (s1[i] != '\0')
 	{
