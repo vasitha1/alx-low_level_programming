@@ -17,6 +17,8 @@ char *str_concat(char *s1, char *s2)
 	len2 = 0;
 	i = 0;
 
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 	/*getting the leength of both s1 + s2*/
 	if (s1 != NULL)
 		while (s1[len1] != '\0')
@@ -44,7 +46,6 @@ char *str_concat(char *s1, char *s2)
 		joined[i] = *s2;
 		s2++;
 		i++;
-
 	}
 	joined[len] = '\0';
 
