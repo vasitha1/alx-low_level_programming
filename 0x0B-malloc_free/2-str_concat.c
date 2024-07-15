@@ -11,11 +11,12 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *joined;
-	int len, len1, len2, i;
+	int len, len1, len2, i, j;
 
 	len1 = 0;
 	len2 = 0;
 	i = 0;
+	j = 0;
 
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
@@ -35,16 +36,15 @@ char *str_concat(char *s1, char *s2)
 
 	if (joined == NULL)
 		return (NULL);
-	/*assigning values to space created for concatinated string*/
 	while (s1[i] != '\0')
 	{
 		joined[i] = s1[i];
 		i++;
 	}
-	while (*s2 != '\0')
+	while (s2[j] != '\0')
 	{
-		joined[i] = *s2;
-		s2++;
+		joined[i] = s2[j];
+		j++;
 		i++;
 	}
 	joined[len] = '\0';
