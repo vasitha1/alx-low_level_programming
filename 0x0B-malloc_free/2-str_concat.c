@@ -13,22 +13,21 @@ char *str_concat(char *s1, char *s2)
 	char *joined;
 	int len, len1, len2, i;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-
 	len1 = 0;
 	len2 = 0;
 	i = 0;
 
 	/*getting the leength of both s1 + s2*/
-	while (s1[len1] != '\0')
-	{
-		len1++;
-	}
-	while (s2[len2] != '\0')
-	{
-		len2++;
-	}
+	if (s1 != NULL)
+		while (s1[len1] != '\0')
+		{
+			len1++;
+		}
+	if (s2 != NULL)
+		while (s2[len2] != '\0')
+		{
+			len2++;
+		}
 	len = len1 + len2;
 	joined = (char *)malloc(sizeof(char) * (len + 1));
 
