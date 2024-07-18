@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat: function that concatenates two strings.
+ * string_nconcat - function that concatenates two strings.
  * @s1: First string to be concatinated
  * @s2: Second string parameter to be added on s1
  * @n: Int parameter representing the number of bytes of s2 to be added on s1
@@ -26,29 +26,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		j++;
 	}
 	if (j > n)
+	{
 		sum = i + n;
-
+		j = n;
+	}
 	else
 		sum = i + j;
-
 	ptr = malloc((sum * sizeof(char)) + 1);
 
 	if (ptr == NULL)
 		return (NULL);
-
-	while (k <= i && i != 0)
+	for (k = 0; k <= i && i != 0; k++)
 	{
 		ptr[k] = s1[k];
-		k++;
 	}
-	k = 0;
 
-	while (k <= j && j != 0)
+	for (k = 0; k <= j && j != 0; k++)
 	{
 		ptr[i + k] = s2[k];
-		k++;
 	}
-
 	ptr[i + k] = '\0';
 
 	return (ptr);
