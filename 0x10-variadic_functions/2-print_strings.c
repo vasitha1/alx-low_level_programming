@@ -16,6 +16,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(strings, n);
 
+	if (separator == NULL)
+		separator = "";
 	i = 0;
 
 	while (i < n)
@@ -25,7 +27,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("nil");
 		printf("%s", str);
 
-		if (separator != NULL && i != (n - 1))
+		if (i != (n - 1))
 			printf("%s", separator);
 		i++;
 	}
