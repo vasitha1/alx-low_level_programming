@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
- * listint_s - structure to define linked list
+ * struct listint_s - structure to define linked list
  * @n: Data part
  * @next: Pointer to next node
  */
