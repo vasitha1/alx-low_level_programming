@@ -25,7 +25,7 @@ void closing(int o, int o2)
 	{
 		c2 = close(o2);
 
-		if (c1 == -1 || c2 == -1)
+		if (c2 == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", o2);
 			exit(100);
