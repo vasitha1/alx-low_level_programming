@@ -11,6 +11,16 @@ int _isdigit(int c)
 }
 
 /**
+ * _strlen - implementing empty function for the sake of dynamic library ex.
+ * @s: String to be added
+ *
+ * Return: Number of bytes written.
+ */
+int _strlen(char *s)
+{
+        return (0);
+}
+/**
  * _puts - implementing empty function for the sake of dynamic library ex.
  * @s: String to be added
  *
