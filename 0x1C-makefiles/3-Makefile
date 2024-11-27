@@ -10,10 +10,10 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 %.o: %.c
-	$(CC) -c -o $@ $<
+	$(CC) -c $< -o $@
 
 clean:
-	$(RM) $(NAME)
+	$(RM) *~$(NAME)
 
 oclean:
 	$(RM) $(OBJ)
