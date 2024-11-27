@@ -13,7 +13,7 @@ $(NAME): $(OBJ)
 	$(CC) -c $< -o $@
 
 clean:
-	$(RM) *~$(NAME)
+	$(RM) *~ *.h.gch
 
 oclean:
 	$(RM) $(OBJ)
